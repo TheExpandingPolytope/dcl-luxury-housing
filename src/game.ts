@@ -12,7 +12,6 @@ class RotatorSystem {
 
       // mutate the rotation
       transform.rotate(Vector3.Up(), dt * 50)
-      transform.scale.scaleInPlace(Math.tan(dt))
     }
   }
 }
