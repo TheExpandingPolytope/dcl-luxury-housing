@@ -49,3 +49,13 @@ cube.addComponent(
     spawnCube(Math.random() * 8 + 1, Math.random() * 8, Math.random() * 8 + 1)
   })
 )
+
+const entity = new Entity();
+
+entity.addComponent(new Transform({
+    position: new Vector3(3, 3, 0),
+    scale: new Vector3(.3, .3, .3),
+}))
+entity.addComponent(new GLTFShape('models/untitled.glb'));
+
+engine.addEntity(entity);
