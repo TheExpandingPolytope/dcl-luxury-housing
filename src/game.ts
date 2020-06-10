@@ -8,10 +8,10 @@ class RotatorSystem {
     // iterate over the entities of the group
     for (let entity of this.group.entities) {
       // get the Transform component of the entity
-      const transform = entity.getComponent(Transform)
+      //const transform = entity.getComponent(Transform)
 
       // mutate the rotation
-      transform.rotate(Vector3.Up(), dt * 50)
+      //transform.rotate(Vector3.Up(), dt * 50)
     }
   }
 }
@@ -53,9 +53,9 @@ cube.addComponent(
 const entity = new Entity();
 
 entity.addComponent(new Transform({
-    position: new Vector3(3, 3, 0),
-    scale: new Vector3(.3, .3, .3),
+    position: new Vector3(17, 0, 15.9),
+    scale: new Vector3(.03, .03, .019)
 }))
-entity.addComponent(new GLTFShape('models/untitled.glb'));
+entity.addComponent(new GLTFShape('models/test.glb'));
 
 engine.addEntity(entity);
